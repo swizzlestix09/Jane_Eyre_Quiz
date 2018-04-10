@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/oil_painting_2007_jane_eyre_by_bluebirdie"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaaregular"
+        android:paddingTop="16dp"
+        android:text="Jane Eyre"
+        android:textAlignment="center"
+        android:textColor="#212121"
+        android:textSize="38sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaaregular"
+        android:text="a quiz"
+        android:textAlignment="center"
+        android:textColor="#212121"
+        android:textSize="20sp"
+
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#99212121"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/comfortaaregular"
+                android:paddingTop="25dp"
+                android:text="What is Jane's aunt's name?"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/firstQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <RadioButton
+                    android:id="@+id/georgina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaaregular"
+                    android:paddingLeft="5dp"
+                    android:text="Georgina"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/sarah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaaregular"
+                    android:paddingLeft="5dp"
+                    android:text="Sarah"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/bessie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaaregular"
+                    android:paddingLeft="5dp"
+                    android:text="Bessie"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/fairfax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaaregular"
+                    android:paddingLeft="5dp"
+                    android:text="Mrs. Fairfax"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/comfortaaregular"
+                android:paddingTop="25dp"
+                android:text="Does the book start at the death of Jane's Parents?"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/thirdQuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <RadioButton
+                    android:id="@+id/falseRadiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaaregular"
+                    android:paddingLeft="5dp"
+                    android:text="False"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/trueRadiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaaregular"
+                    android:paddingLeft="5dp"
+                    android:text="True"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/comfortaaregular"
+                android:paddingTop="25dp"
+                android:text="What school did Jane go to?"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/answer_input"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="answer"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/comfortaaregular"
+                android:paddingTop="25dp"
+                android:text="Which two were Jane closest to at Thornfield?"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/bessieCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaaregular"
+                android:paddingLeft="5dp"
+                android:text="Bessie" />
+
+            <CheckBox
+                android:id="@+id/adeleCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaaregular"
+                android:paddingLeft="5dp"
+                android:text="Adele" />
+
+            <CheckBox
+                android:id="@+id/graceCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaaregular"
+                android:paddingLeft="5dp"
+                android:text="Grace" />
+
+            <CheckBox
+                android:id="@+id/fairfaxCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaaregular"
+                android:paddingLeft="5dp"
+                android:text="Mrs. Fairfax" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/comfortaaregular"
+                android:paddingTop="25dp"
+                android:text="Who is Sophie's biological mother?"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/fifthQuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <RadioButton
+                    android:id="@+id/jane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaaregular"
+                    android:paddingLeft="5dp"
+                    android:text="Jane Eyre"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/celine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaaregular"
+                    android:paddingLeft="5dp"
+                    android:text="Celine Varnes"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/sarahR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaaregular"
+                    android:paddingLeft="5dp"
+                    android:text="Sarah Reed"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/comfortaaregular"
+                android:onClick="finalTally"
+                android:text="Submit"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
